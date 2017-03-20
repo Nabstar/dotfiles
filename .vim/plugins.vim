@@ -13,7 +13,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'othree/html5.vim'
+Plugin 'Valloric/YouCompleteMe' 
+Plugin 'altercation/vim-colors-solarized.git'
 call vundle#end()            " required
 filetype plugin indent on    " required
 

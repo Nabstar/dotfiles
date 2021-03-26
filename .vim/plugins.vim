@@ -1,29 +1,23 @@
-filetype off                  " required
+call plug#begin()
 
-" set the runtime path to include Vundle and initialize
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-vinegar'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'othree/html5.vim'
-Plugin 'Valloric/YouCompleteMe' 
-Plugin 'altercation/vim-colors-solarized.git'
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
-
-
-
-
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
+" Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+Plug 'rust-lang/rust.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-surround'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/0.x',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+  \ }
+Plug 'mattn/emmet-vim'
+Plug 'preservim/tagbar'
+Plug 'vimwiki/vimwiki'
+Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/goyo.vim'
+call plug#end()            " required
